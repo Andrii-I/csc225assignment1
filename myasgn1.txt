@@ -210,11 +210,11 @@ Provide the answer in hexadecimal:
 
 2.2 Create a one-line program in RARS! (1 pt)
 
-2.2.1 What is the decimal value of the data in X5?  ____________
+2.2.1 What is the decimal value of the data in X5?  0
 
-2.2.2 What is the hexadecimal value of the data in X3?  ____________
+2.2.2 What is the hexadecimal value of the data in X3?  0x10008000
 
-2.2.3 What is the hexadecimal value of the data in register x2?    ____________
+2.2.3 What is the hexadecimal value of the data in register x2?    0x7fffeffc
 
 2.2.4 What is the hexadecimal value at location 0x400000 in memory?     ____________
 
@@ -224,7 +224,7 @@ Provide the answer in hexadecimal:
 
 
 
-      What is the hexadecimal value of the data in register x2?  ____________
+      What is the hexadecimal value of the data in register x2?  0x7fffeffc
 
 	  
 
@@ -234,13 +234,13 @@ Write the instruction in hexadecimal that will always accomplish the tasks indic
 
 
 
-2.3.1 Copy X1 to X2    ____________
+2.3.1 Copy X1 to X2    mv sp, ra
 
-2.3.2 Clear X1 to zero   ____________
+2.3.2 Clear X1 to zero   mv ra, zero
 
-2.3.3 Clear only bit 2 of X1.  ____________
+2.3.3 Clear only bit 2 of X1.  and ra, ra, 0x11111011
 
-2.3.4 Set only bit 3 of X1.  ____________
+2.3.4 Set only bit 3 of X1.  and ra, ra, 0x11111011
 
 
 
