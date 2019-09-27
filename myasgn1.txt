@@ -1,0 +1,248 @@
+CPE 225
+
+Assignment 1
+
+Name: Andrii Ieroshenko
+
+
+
+Objectives:
+
+Navigate the BASH shell and use VIM to edit files.
+
+Review binary, hexadecimal, and logical operations
+
+Use the RARS RISC-V Simulator
+
+
+
+1 Binary Arithmetic
+
+Complete the worksheet on binary arithmetic on the following pages.  Each section must be 100% correct to get each point.
+
+For each of the sections below, you must get the answers completely correct to get the point.
+
+
+
+1.1 Unsigned 8-bit arithmetic (1 pt)
+
+For the following unsigned, 8-bit numbers, what is the value (in decimal) of each of the following numbers:
+
+Binary Value : Decimal Value
+
+00000000 : 0
+
+00101100 : 44
+
+11111111 : 255
+
+00010000 : 16 
+
+10000000 : 128 
+
+00010001 : 17 
+
+
+
+For unsigned numbers, what is the range of values that can fit in 8 bits? I have done the first one for you to show you what I expect.
+
+Minimum Values
+
+binary: 00000000
+
+decimal: 0
+
+
+
+Maximum Values
+
+binary: 11111111 
+
+decimal: 255
+
+
+
+1.2 Signed 2's Compliment 8-bit arithmetic (1 pt)
+
+For signed, 8-bit numbers, what is the value (in decimal) of each of the following 2's complement binary numbers:
+
+Binary Value : Decimal Value
+
+00000000  : +0
+
+00011100  : +28
+
+11111111  : -1
+
+00010101  : +21
+
+10000000  : -128
+
+10111001  : -71
+
+
+
+For 2's complement signed numbers, what is the range of values that can fit in 8 bits?
+
+Minimum Values
+
+binary: 10000000
+
+decimal: -128
+
+
+
+Maximum Values
+
+binary: 01111111
+
+decimal: +127
+
+
+
+
+
+1.3 Carry and Sign Overflow (1 pt)
+
+Give an example of a Carry overflow without a Sign overflow:
+
+(the decimal result must clearly show a math error)
+
+     Binary:     ___________  +   ___________  =  ____________
+
+     Decimal:    ___________  +   ___________  =  ____________
+
+
+
+Give an example of a Sign Overflow without a Carry overflow:
+
+(the decimal result must clearly show a math  error)
+
+     Binary:     ___________  +  ___________  =  ____________
+
+     Decimal:    ___________  +  ___________  =  ____________
+
+
+
+
+
+1.4 Hexadecimal (1 pt)
+
+Translate the following values into hexadecimal:
+
+00000000  : 0
+
+00001011  : B
+
+11111111  : FF
+
+00010101  : 15
+
+10001000  : 88
+
+11010110  : D6
+
+
+
+Add the following 16-bit hexadecimal values:
+
+Provide the answer in hexadecimal:
+
+   x24A3 + x5678 = x7B1B
+
+   xABCD + x1EEE = xCABB
+
+
+
+Subtract the following 16-bit hexadecimal values:
+
+Provide the answer in hexadecimal:
+
+	x94AA - x5678 = x3E32
+
+	xFBCD - xEEEE = x0CDF
+
+
+
+1.5 Bitwise Logic Operations (1 pt)
+
+Perform the following bitwise logical operations.
+
+Provide the answer in hexadecimal:
+
+  	x24A3 & x5087 = x0083
+
+	xABCD | x1EEE = xBFEF
+
+
+
+Determine both the operation (ADD/AND/OR/NOT) and the value needed to set bit 5 of the following value to zero (clear bit 5) in a single operation.  Leave the rest of the bits unchanged. (Hint: expand the values to binary.)
+
+Provide the answer in hexadecimal:
+
+       x947A  ADD    x0020   =  x949A 
+
+
+
+Determine both the operation (ADD/AND/OR/NOT) and the value needed to set bit 4 of the following value to one (set bit 4) in a single operation.  Leave the rest of the bits unchanged. 
+
+Provide the answer in hexadecimal:
+
+       x76CA  OR    x0010   =  x76DA 
+
+
+
+2 Using the RARS Simulator
+
+
+
+2.1 Starting the RARS Simulator  (1 pt)
+
+
+
+2.1.1 What is the hexadecimal value of the Program Counter (pc) by default?    0x00400000
+
+2.1.2 What is the hexadecimal value of register 1 (x1) set to by default?    0x00000000
+
+
+
+
+
+2.2 Create a one-line program in RARS! (1 pt)
+
+2.2.1 What is the decimal value of the data in X5?  ____________
+
+2.2.2 What is the hexadecimal value of the data in X3?  ____________
+
+2.2.3 What is the hexadecimal value of the data in register x2?    ____________
+
+2.2.4 What is the hexadecimal value at location 0x400000 in memory?     ____________
+
+
+
+2.2.3 Modifying values
+
+
+
+      What is the hexadecimal value of the data in register x2?  ____________
+
+	  
+
+2.3 Let's do more complicated things with ADD, AND, and NOT  (1 pt)
+
+Write the instruction in hexadecimal that will always accomplish the tasks indicated.
+
+
+
+2.3.1 Copy X1 to X2    ____________
+
+2.3.2 Clear X1 to zero   ____________
+
+2.3.3 Clear only bit 2 of X1.  ____________
+
+2.3.4 Set only bit 3 of X1.  ____________
+
+
+
+
+
